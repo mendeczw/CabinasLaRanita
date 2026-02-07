@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cabinas La Ranita</title>
+    <meta
+      name="description"
+      content="Cabinas La Ranita: Comodidad y buen trato a solo 3 km antes de la antigua aduana. Atendido con el cariño de Anais Solis."
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+      }
+      .hero {
+        background: url("IMG/Principal.jpg") center/cover no-repeat;
+        min-height: 85vh;
+        color: white;
+        position: relative;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+      }
+      .hero-content {
+        position: relative;
+        z-index: 2;
+      }
+      .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #25d366;
+        color: white;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        z-index: 999;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      }
+      footer {
+        background: #1f1f1f;
+        color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Cabinas La Ranita</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#habitaciones">Habitaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ubicacion">Ubicación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero d-flex align-items-center">
+      <div class="container hero-content text-center">
+        <h1 class="display-4 fw-bold">Cabinas La Ranita</h1>
+        <p class="lead">Descanso a un paso de todo</p>
+        <p>
+          Comodidad y buen trato a solo 3 km antes de la antigua aduana.<br />Atendido
+          con cariño por <strong>Anais Solis</strong>.
+        </p>
+        <a
+          href="https://wa.me/50688152341?text=Hola%20👋%2C%20me%20gustaría%20saber%20si%20tienen%20habitaciones%20disponibles%20en%20Cabinas%20La%20Ranita.%20Gracias."
+          class="btn btn-success btn-lg mt-3"
+        >
+          <i class="bi bi-whatsapp"></i> Reservar por WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- HABITACIONES -->
+    <section id="habitaciones" class="py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="fw-bold">Nuestras Habitaciones</h2>
+          <p>Simples, limpias y cómodas para su descanso</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <img src="IMG/Hab1.jpg" class="img-fluid rounded" />
+          </div>
+          <div class="col-md-4">
+            <img src="IMG/Hab2.jpg" class="img-fluid rounded" />
+          </div>
+          <div class="col-md-4">
+            <img src="IMG/Hab3.jpg" class="img-fluid rounded" />
+          </div>
+          <div class="col-md-4">
+            <img src="IMG/Hab4.jpg" class="img-fluid rounded" />
+          </div>
+          !--
+          <div class="col-md-4">
+            <img src="IMG/Fot4.jpg" class="img-fluid rounded" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UBICACION -->
+    <section id="ubicacion" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-3">
+            <h2 class="fw-bold">Ubicación Estratégica</h2>
+            <p>
+              Ubicados 3 kilómetros antes de la antigua aduana, ideales para
+              viajeros hacia la frontera o el Depósito Libre de Golfito.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <iframe
+              src="https://www.google.com/maps?q=Cabinas+La+Ranita&output=embed"
+              width="100%"
+              height="300"
+              style="border: 0"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold">Contacto</h2>
+        <p>Reservaciones y consultas</p>
+        <p><i class="bi bi-whatsapp"></i> <strong>+506 8815 2341</strong></p>
+        <p>
+          Atendido personalmente por Anais Solis con el cariño y la atención que
+          nos caracteriza.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 text-center">
+      <p class="mb-0">
+        © 2026 Cabinas La Ranita · Su parada de confianza --- Desarrollado por:
+        William Méndez
+      </p>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/50688152341?text=Hola%20👋%2C%20me%20gustaría%20saber%20si%20tienen%20habitaciones%20disponibles%20en%20Cabinas%20La%20Ranita.%20Gracias."
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Cerrar menú hamburguesa al hacer clic en un enlace (móviles)
+      document.querySelectorAll(".navbar-nav .nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          const menu = document.querySelector(".navbar-collapse");
+          const bsCollapse = bootstrap.Collapse.getInstance(menu);
+          if (bsCollapse) {
+            bsCollapse.hide();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
